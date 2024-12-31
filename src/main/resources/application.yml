@@ -1,0 +1,26 @@
+custom:
+  api-keys:
+    alpha: B08156TCRP8OQHHF
+    fmCloud: cf1f16fbdbde90b878a7fa458e9e04eb
+
+
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: password@123
+    url: jdbc:postgresql://localhost:5432/sana
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+  sql:
+    init:
+      platform: postgres
+      mode: always
+      continue-on-error: true
